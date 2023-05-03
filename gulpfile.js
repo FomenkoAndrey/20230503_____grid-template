@@ -27,7 +27,7 @@ const PATH = {
 };
 
 const PLUGINS = [
-  dc({ discardComments: true }),
+  dc({discardComments: true}),
   autoprefixer({
     overrideBrowserslist: [
       'last 5 versions',
@@ -54,14 +54,14 @@ function scssMin() {
     .pipe(sass().on('error', sass.logError))
     .pipe(csscomb())
     .pipe(postcss(pluginsForMinify))
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(dest(PATH.cssFolder))
 }
 
 function scssDev() {
   const pluginsForDevMode = [...PLUGINS]
 
-  pluginsForDevMode.splice(1,1)
+  pluginsForDevMode.splice(1, 1)
 
   return src(PATH.scssRoot, {sourcemaps: true})
     .pipe(sass().on('error', sass.logError))
