@@ -1,3 +1,6 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header-navbar {
   &__btn {
     display: none;
@@ -8,7 +11,7 @@
     grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
 
     justify-content: end;
-    @include unlist;
+    @include unlist(0 (-$gap-sm) 0);
     gap: $gap;
   }
 

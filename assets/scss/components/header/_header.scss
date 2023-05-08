@@ -1,7 +1,12 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header {
   background-color: $color-primary;
   color: $color-light;
   background-image: url(../img/img-header.png);
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   position: relative;
   padding: 150px 0;
