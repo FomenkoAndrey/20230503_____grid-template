@@ -2,15 +2,17 @@
 @use "../../mixins" as *;
 
 .header {
-  background-color: $color-primary;
-  color: $color-light;
-  background-image: url(../img/img-header.png);
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
   position: relative;
-  padding: 150px 0;
 
   display: grid;
   align-content: center;
+
+  min-height: 100vh;
+  padding: 150px 0;
+
+  color: $color-light;
+  background-color: $color-primary;
+  background-image: url(../img/img-header.png);
+  background-position: center;
+  background-size: cover;
 }

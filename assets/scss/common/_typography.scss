@@ -13,16 +13,18 @@ html {
 }
 
 body {
-  background-color: $color-light;
-  color: $color-gray;
   overflow-y: scroll;
+
+  color: $color-gray;
+  background-color: $color-light;
 }
 
 h1 {
   letter-spacing: 0.08em;
-  line-height: 1.2em;
-  font-weight: 300;
+
   font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2em;
 
   @include lg-min {
     font-size: 3.75rem;
@@ -35,10 +37,10 @@ h1 {
   }
 }
 
-h2 {
-}
+
 
 a {
   text-decoration: none;
+
   color: $color-light;
 }

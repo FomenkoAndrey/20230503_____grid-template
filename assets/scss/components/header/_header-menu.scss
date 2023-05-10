@@ -7,19 +7,21 @@
   top: 0;
   right: 0;
   left: 0;
+
   padding: $gap 0;
 
   @include md {
     background-color: rgba($color-gray-dark, 0.25);
+
     @include box-shadow;
   }
 
   &__container {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: $gap;
     align-items: center;
 
     @extend %container;
+    gap: $gap;
+    grid-template-columns: auto 1fr;
   }
 }

@@ -2,12 +2,15 @@
 @use "../mixins" as *;
 
 .btn {
-  padding: 0.5em 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.1em;
+
+  padding: 0.5em 1em;
+
   transition: background-color 0.25s;
+  letter-spacing: 0.1em;
+
   border-width: 2px;
   border-style: solid;
 
@@ -18,12 +21,13 @@
 }
 
 .btn--light {
-  background-color: rgba($color-light, 0.1);
   border-color: $color-light;
+  background-color: rgba($color-light, 0.1);
 
   @include lg-min {
     min-width: 250px;
     min-height: 60px;
+
     font-size: 1.125rem;
   }
   @include lg-md {
@@ -38,9 +42,11 @@
 
 .btn--primary {
   min-height: 60px;
-  font-size: 1.125rem;
-  background-color: rgba($color-primary, 0.8);
+
   border-color: $color-primary;
+  background-color: rgba($color-primary, 0.8);
+
+  font-size: 1.125rem;
 
   @include sm-min {
     min-width: 350px;
@@ -51,5 +57,5 @@
 }
 
 .visually-hidden {
-  @include visually-hidden
+  @include visually-hidden;
 }
